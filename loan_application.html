@@ -1,0 +1,30 @@
+<!-- loan_application.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <form action="apply_loan.php" method="POST">
+            <h2>Apply for a Loan</h2>
+
+            <label for="loan_type">Loan Type</label>
+            <select name="loan_type" required>
+                <option value="personal">Personal Loan</option>
+                <option value="home">Home Loan</option>
+                <option value="auto">Auto Loan</option>
+            </select>
+
+            <label for="loan_amount">Loan Amount</label>
+            <input type="number" name="loan_amount" required>
+
+            <button type="submit">Apply for Loan</button>
+        </form>
+    </div>
+</body>
+</html>
